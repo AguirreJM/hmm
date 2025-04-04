@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - S4 Perfumery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 50px 5%;
+            background-color: #1a253d;
+        }
+        
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .about-intro h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .team-section {
+            margin-top: 60px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background-color:#304f84;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-member .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            background-color: var(--secondary-color);
+            position: relative;
+        }
+
+        .team-member .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .team-member .avatar i {
+            font-size: 80px;
+            color: rgb(144, 106, 106);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media screen and (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .team-member .avatar {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .team-member .avatar {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">S4 PERFUMERY</div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </span>
+        </div>
+    </nav>
+    
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-intro">
+                <h2>About S4 Perfumery</h2>
+                <p>Founded in 2025, S4 Perfumery has been dedicated to bringing the finest fragrances to our customers. We carefully curate our collection to offer a diverse range of scents that appeal to various preferences. Our mission is to make a web application for E-commerce as our Final Project in Web Systems & Technology. Thank you - Aguirre J.</p>
+            </div>
+            
+            <div class="team-section">
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="jm.jpg" alt="John Michael Aguirre">
+                            <i class="fas fa-user" style="display: none;"></i>
+                        </div>
+                        <h4>John Michael Aguirre</h4>
+                        <p>Project Manager <br>
+                        Frontend Developer <br>
+                        Backend Developer <br>
+                        Content & UI Designer </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="james.jpg" alt="James Obcianal">
+                            <i class="fas fa-user" style="display: none;"></i>
+                        </div>
+                        <h4>James Obcianal</h4>
+                        <p>Content & UI Designer <br>
+                        Frontend Developer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="lester.jpg" alt="John Lester Tupas">
+                            <i class="fas fa-user" style="display: none;"></i>
+                        </div>
+                        <h4>John Lester Tupas</h4>
+                        <p>Backend Developer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="yuriz.jpg" alt="Yuriz Ronnel Dominggo">
+                            <i class="fas fa-user" style="display: none;"></i>
+                        </div>
+                        <h4>Yuriz Ronnel Dominggo</h4>
+                        <p>Frontend Developer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="froi.jpg" alt="Froi Razonable">
+                            <i class="fas fa-user" style="display: none;"></i>
+                        </div>
+                        <h4>Froi Razonable</h4>
+                        <p>Github & Deployment Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total: ₱<span class="cart-total">0.00</span></p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 S4 Perfumery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
